@@ -1,0 +1,127 @@
+.testimonals{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.left1-l{
+    display: flex;
+   flex-direction: column;
+    gap: 2rem;
+    flex: 1 1;
+    text-transform: uppercase;
+    color: white;
+}
+.left1-l>:nth-child(1){
+    color: var(--orange);
+    font-weight: bold;
+}
+.left1-l>:nth-child(2),
+.left1-l>:nth-child(3){
+    font-weight: bold;
+    font-size: 3rem;
+}
+.left1-l>:nth-child(4){
+    text-transform: none;
+    line-height: 40px;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+.right1-r{
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+.right1-r>img{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    right: 8rem;
+    top: 2rem;
+    object-fit: cover;
+}
+.right1-r>:nth-child(1){
+    position: absolute;
+    border: 3px solid var(--orange);
+    width: 17rem;
+    height: 20rem;
+    right: 9rem;
+    top: 0.9rem;
+    background-color: transparent;
+}
+.right1-r>:nth-child(2){
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    right: 7rem;
+    top: 3rem;
+background: var(--planCard);
+}
+.arrow{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    left: 4rem;
+    bottom: -3rem;
+}
+
+.arrow>img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+.blur{
+    bottom: 0;
+    -webkit-filter: blur(200px);
+    filter: blur(200px);
+    height: 12rem;
+    width: 26rem;
+}
+
+@media screen and (max-width: 768px){
+    .testimonals{
+        flex-direction: column;
+    }
+    .left1-l{
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+    }
+    .left1-l>:nth-child(2){
+        align-items: center;
+       text-align: center;
+       font-size: xx-large;
+    }
+    .left1-l>:nth-child(3){
+        align-items: center;
+       text-align: center;
+       font-size: xx-large;
+    }
+
+    .left1-l >:nth-child(4){
+        letter-spacing: 0.5;
+        font-size: large;
+        line-height: 30px;
+    }
+    .right1-r{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .right1-r>div{
+        position: relative;
+        display: none;
+    }
+    .right1-r>img{
+     position: relative;
+     top: 0;
+     right: 0;
+     align-self: center;
+    }
+    .right1-r>:last-child{
+        display: block;
+        left: 0;
+        bottom: 0;
+    }
+}

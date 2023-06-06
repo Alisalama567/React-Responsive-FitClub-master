@@ -1,0 +1,75 @@
+.ready{
+    display: flex;
+    padding: 0 2rem;
+    gap: 1rem;
+    
+}
+.ready-l>hr{
+border-radius: 20%;
+border: 2px solid var(--orange);
+width: 10.5rem;
+position: absolute;
+margin: -10px 0;
+}
+.ready-l{
+    display: flex;
+    flex : 1 1 ;
+    flex-direction: column;
+    position: relative;
+    gap:1rem;
+    
+
+}
+.ready-l>span{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.ready-r{
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.email-container{
+    display: flex;
+    background-color: gray;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    align-items: center;
+    /* position: absolute; */
+    /* right: 20rem; */
+    width: 18rem;
+}
+.email-container>input {
+    background: initial;
+    border: none;
+    color: var(--lightgray) !important;
+    outline: none;
+}
+::placeholder{
+    color: var(--lightgray) !important;
+
+}
+.email-container>button{
+   color : white;
+   font-weight : bold;
+   background-color : var(--orange);
+   font-size: 1rem;
+   width: 8rem;   
+   height: 3rem;
+   border: none;
+   cursor: pointer;
+   border-radius: 10px;
+}
+@media screen and (max-width: 768px){
+    .ready{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .ready-l>span{
+        flex-direction: column;
+        font-size: x-large;
+    }
+}
